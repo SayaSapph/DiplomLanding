@@ -10,40 +10,13 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, body, .btn_minus, .btn_plus {
   margin: 0;
   font-family: "Exo 2";
 }
 
 body {
-  display: flex;
   align-items: center;
-}
-
-header {
-  height: 125px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 55px 0 55px;
-  font-weight: 700;
-  align-items: center;
-}
-header a {
-  font-size: 20px;
-  color: rgb(139, 139, 139);
-}
-header a:hover {
-  text-decoration: underline;
-  color: black;
-  transition: 0.5s;
-}
-header .headerInfo {
-  height: 125px;
-  width: 1110px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .wrapper {
@@ -52,6 +25,30 @@ header .headerInfo {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+header a {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  font-size: 20px;
+  color: rgb(139, 139, 139);
+}
+header a:hover {
+  color: #000;
+  border-bottom: 1px solid rgb(0, 202, 105);
+  transition: 0.5s;
 }
 
 .main-card {
@@ -214,6 +211,21 @@ h1.m3 {
   align-items: center;
   width: 262px;
   border: 1px solid rgb(212, 212, 212);
+  transition: 0.2s;
+}
+.strategy .statistic-card:hover {
+  color: rgb(0, 202, 105);
+  border-color: rgb(0, 202, 105);
+  transition: 0.2s;
+}
+.strategy .statistic-card:hover p {
+  color: rgb(0, 202, 105);
+}
+.strategy .statistic-card:hover svg .s {
+  stroke: rgb(0, 202, 105);
+}
+.strategy .statistic-card:hover svg .c {
+  fill: rgb(0, 202, 105);
 }
 .strategy .statistic-card svg {
   margin-top: 20px;
@@ -276,10 +288,10 @@ h1.m3 {
   padding: 0;
 }
 .strategy .history .stories .story:last-child .story-card h2, .strategy .history .stories .story:last-child .story-card p {
-  color: #000;
+  color: rgb(51, 51, 51);
 }
 .strategy .history .stories .story:last-child .story-card h2.year {
-  background-color: #000;
+  background-color: rgb(51, 51, 51);
   color: white;
 }
 
@@ -346,7 +358,13 @@ h1.m3 {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  transition: 0.2s;
   cursor: pointer;
+}
+.tariff-list-section .button:hover {
+  background-color: rgb(169, 61, 255);
+  color: white;
+  transition: 0.2s;
 }
 .tariff-list #main-section .title {
   background-color: transparent;
@@ -422,6 +440,12 @@ h1.m3 {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+  transition: 0.2s;
+}
+.tariff-custom .button:hover {
+  color: rgb(0, 202, 105);
+  background-color: white;
+  transition: 0.2s;
 }
 
 .contacts {
@@ -440,7 +464,7 @@ h1.m3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #000;
+  border: 1px solid rgb(51, 51, 51);
   border-radius: 20px;
   margin-bottom: 80px;
 }
@@ -481,14 +505,14 @@ h1.m3 {
   height: 50px;
   width: 400px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid rgb(51, 51, 51);
   margin-top: 20px;
 }
 .contacts .form .inp_text {
   height: 120px;
   width: 400px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid rgb(51, 51, 51);
   margin-top: 20px;
 }
 .contacts .form .button {
@@ -506,7 +530,7 @@ h1.m3 {
   transition: 0.5s;
   cursor: pointer;
 }
-.contacts .form .button:active {
+.contacts .form .button:hover {
   background-color: rgb(169, 61, 255);
   color: white;
   transition: 0.5s;
@@ -558,10 +582,12 @@ h1.m3 {
   color: white;
   border: 1px solid white;
   cursor: pointer;
+  transition: 0.2s;
 }
-.product-list .block .button:active {
+.product-list .block .button:hover {
   background-color: white;
   color: #000;
+  transition: 0.2s;
 }
 
 footer {
