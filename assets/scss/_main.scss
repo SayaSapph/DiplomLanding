@@ -1,0 +1,611 @@
+
+
+header{ 
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 55px 0 55px;
+    font-weight: 700;
+    align-items: center;
+    a{
+      font-size: 20px;
+      color: $grey;
+      &:hover{
+        text-decoration: underline;
+        color: black;
+        transition: 0.5s;
+      }
+    }
+    .headerInfo{
+      height: 125px;
+      width: 1110px;
+      margin: 0 auto;
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      }
+  }
+
+.wrapper{
+  width: 1110px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main-card{
+    height: 285px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    background-color: $green;
+    border-radius: 10px;
+    justify-content: space-between;
+    .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: $white;
+      margin-top: 30px;
+        
+    h4{
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    .text{
+        width: 870px;
+        text-align: center;
+        margin-bottom: 50px;
+
+      h1{
+          font-size: 30px;
+          color: $white;
+          font-weight: 700;
+          
+      }
+    }
+}
+.main-list{
+  margin-top: 20px;
+  width: 100%;
+  .list-card{
+    height: 64px;
+    margin: 0 5px;
+    margin-bottom: 18px;
+    border: 1px solid $stroke-light;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    &:hover{
+      transition: 0.5s;
+      background-color: $purple;
+      h3{
+        color: $white;
+      }
+    }
+    h3{
+      font-size: 20px;
+      font-weight: 700px;
+      color: $grey;
+    }
+  }
+}
+.process{
+  margin: 12px 0;
+  width: 1100px;
+  margin-bottom: 70px;
+  h4{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .p-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 83.5px;
+      width: 311px;
+      border-radius: 10px;
+      background-color: $dark;
+      transition: 0.3s;
+      h4{
+        font-size: 16px;
+        font-weight: 700;
+        color: $white;
+        &.num{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+          width: 40px;
+          height: 40px;
+          color: $black;
+          border-radius: 20px;
+          background-color: $white;
+        }
+      }
+      p{
+        font-size: 16px;
+        font-weight: 300;
+        color: $white;
+        text-align: center;
+        margin: 0 28.5px;
+        margin-bottom: 17px;
+      }
+      &:last-child{
+        margin-right: 0px;
+      }
+      &:hover{
+        transform: scale(103%);
+        transition: 0.5s;
+
+      }
+    }
+  }
+}
+h1{
+  &.main{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &.m1{
+    background-color: $green;
+    color: $white;
+  }
+  &.m2{
+    background-color: $purple;
+    color: $white;
+  }
+  &.m3{
+    background-color: $dark;
+    color: $white;
+  }
+}
+.strategy{
+  p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: $black;
+    padding: 30px;
+  }
+  .statistic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 262px;
+      border: 1px solid $stroke-light;
+      svg{
+        margin-top: 20px;
+      }
+      h1{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+      }
+      p{
+        padding: 20px;
+      }
+    }
+  }
+  .history{
+    h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
+    .stories{
+      display: flex;
+      margin-bottom: 50px;
+      .story{
+        height: 422px;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &-card{
+          width: 535px;
+          height: 186px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h2.year{
+            width: 116px;
+            height: 40px;
+            margin: 0;
+            border-radius: 20px;
+            background-color: $green;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          h2{
+            color: $green;
+            margin: 10px 0;
+          }
+          p{
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            color: $green;
+            padding: 0;
+          }
+        }
+        &:last-child{
+          .story-card{
+            h2, p{
+              color: $black;
+            }
+            h2.year{
+              background-color: $black;
+              color: $white;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+.tariff{
+  width: 100%;
+  margin-top: 50px;
+  p.ps{
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  &-list{
+  display: flex;
+  justify-content: space-between;
+    &-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .data{
+        width: 223px;
+        .title{
+          height: 44px;
+          background-color: $green;
+          border-radius: 10px 10px 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h3{
+            color: $white;
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+        .props{
+          display: flex;
+          flex-direction: column;
+          .prop{
+            height: 44px;
+            border-bottom: 1px solid $stroke-light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:last-child{
+              border: none;
+            }
+            p{
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .button{
+        margin-top: 29px;
+        width: 108px;
+        height: 39px;
+        background-color: $yellow;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    #main-section{
+      .title{
+        background-color: transparent;
+      }
+      .prop{
+        justify-content: start;
+      }
+      .button{
+        background-color: transparent;
+      }
+    }
+  }
+  &-custom{
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: $green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      color: $white;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    .counters{
+      width: 1030px;
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $white;
+      .counter{
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid $white;
+        .count{
+          font-size: 20px;
+          margin-bottom: 15px;
+          height: 25px;
+        }
+        
+        p.info{
+          margin-bottom: 10px;
+          font-size: 20px;
+          
+        }
+
+        input{
+          width: 100%;
+          height: 25px;
+          border: none;
+          background-color: transparent;
+          font-size: 20px;
+          text-align: center;
+          color: $white;
+          margin-bottom: 13px;
+          &:focus{
+            outline: 0 !important;
+          }
+        }
+      }
+    }
+    .button{
+      margin-top: 29px;
+      width: 287px;
+      height: 54px;
+      background-color: transparent;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      color: $white;
+      border: 1px solid $white;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.contacts{
+  p.app{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form{
+    p{
+      margin: 20px 0 20px;
+      font-size: 18px;
+    }
+    width: 440px;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $black;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    .choice{
+      display: flex;
+      width: 400px;
+      height: 44px;
+      .mail{
+        width: 50%;
+        height: 100%;
+        border-bottom: 1px solid $stroke-light;
+        cursor: pointer;
+        .btn{
+          border: none;
+          background-color: transparent;
+          display: flex;
+          color: $stroke-light;
+          width: 100%;
+          height: 100%;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          &:active{
+            color: $orange;
+          }
+        }
+        &:active{
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
+      }
+    }
+
+
+    .inp_info{
+      height: 50px;
+      width: 400px;
+      border-radius: 10px;
+      border: 1px solid $black;
+      margin-top: 20px;
+    }
+
+    .inp_text{
+      height: 120px;
+      width: 400px;
+      border-radius: 10px;
+      border: 1px solid $black;
+      margin-top: 20px;
+    }
+
+
+
+
+    
+
+
+    .button{
+      margin-top: 29px;
+      width: 400px;
+      height: 54px;
+      background-color: $yellow;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      color: $black;
+      transition: 0.5s;
+      cursor: pointer;
+      &:active{
+        background-color: $purple;
+        color: $white;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+
+
+.product{
+  margin-bottom: 80px;
+  margin-top: 30px;
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &-list{
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    background-color: $dark;
+    &:first-child{
+      background-color: $green;
+    }
+    &:last-child{
+      background-color: $purple;
+    }
+    .block{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $white;
+      .title{
+        text-align: center;
+        width: 330px;
+        margin: 30px 0 50px 0;
+      }
+      .button{
+        margin-top: 29px;
+        width: 287px;
+        height: 54px;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: $white;
+        border: 1px solid $white;
+        cursor: pointer;
+        &:active{
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  height: 186px;
+  background-color: $yellow;
+  display: flex;
+  align-items: center;
+  .wrapper{
+    flex-direction:row;
+    justify-content: space-between;
+    .text{
+      display: flex;
+      flex-direction: column;
+      p{
+        margin-top: 10px;
+      }
+    }
+
+      .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background-color: $dark;
+        
+          
+      h4{
+            font-size: 16px;
+            font-weight: 700;
+            color: $white;
+          }
+        }
+    
+    
+  }
+  
+}
